@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+
+main{
+    width: 61%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+}
+
+header{
+    position: sticky; 
+}
+
+nav {
+    width: 38%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav:before {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    content: '';
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+}
+
+nav ol{
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ol li{
+    padding: 0px 30px;
+    float: left;
+    height: 50px;
+    text-align: center;
+    color: white;
+    display: block;
+    line-height: 50px;
+}
+  
+nav ol li:hover{
+    background-color: #e0373d;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 230px;
+    bottom: 0px;
+ }
+
+.info{
+    color: white;
+    width: 46%;
+    height: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+}
+
+footer:before{
+    height: 230px;
+    display: block;
+    width: 100%;
+    background-color: black;
+    content: '';
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+}
+
+.footer_text{
+    float: left;
+}
+
+footer ul{
+    list-style: none;
+    margin-top: 15px;
+    text-align: justify;
+    padding-left: 30px;
+}
+
+footer ul li:hover{
+    background-color: #e0373d;
+}
+
+footer p{
+    margin-top: 0;
+    text-align: center;
+}
+
+footer a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    width: 100%; 
+}

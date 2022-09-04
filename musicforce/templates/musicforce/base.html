@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block second_head %}
+    {% endblock second_head %}
+    <link rel="stylesheet" href="{% static 'musicforce/css/base.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        {% block header %}
+        <header>
+            <nav>
+                <ol id="nav_menu_text">
+                    {% for m in menu.0 %}
+                        <li>{{m}}</li>
+                    {% endfor %}
+                </ol>
+            </nav>
+        </header>
+        {% endblock header %}
+
+        {% block content %}
+        {% endblock content %}
+        
+        {% block footer %}
+        <footer>
+            <div class="info">
+                <ul class="footer_text"><p>Компания</p><hr>
+                    {% for m in menu.1.0%}
+                        <li>{{m}}</li>
+                    {% endfor %}
+                </ul>
+                <ul class="footer_text"><p>Покупателям</p><hr>
+                    {% for m in menu.1.1%}
+                        <li>{{m}}</li>
+                    {% endfor %}
+                </ul>
+                <ul class="footer_text"><p>Всегда на связи:</p><hr>
+                    {% for m in menu.1.2%}
+                        <li>{{m}}</li>
+                    {% endfor %}
+                        <li><a href="https://vk.com/id221914113">VK</a></li>
+                </ul>
+            </div>
+        </footer>
+        {% endblock footer %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{% extends 'musicforce/base.html' %}
+{% load static %}
+
+{% block second_head %}
+    <title>lox</title>
+    <link rel="stylesheet" href="{% static 'musicforce/css/index.css' %}">
+{% endblock second_head %}
+
+{% block content %}
+    <main>
+        <h1>Добрый вечер, {{name}}</h1>
+    </main>
+{% endblock content %}

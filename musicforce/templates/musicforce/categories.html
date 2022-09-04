@@ -1,0 +1,26 @@
+{% extends 'musicforce/base.html' %}
+{% load static %}
+
+{% block second_head %}
+    <title>lox</title>
+    <link rel="stylesheet" href="{% static 'musicforce/css/cats.css' %}">
+{% endblock second_head %}
+
+{% block content %}
+    <h1>Товары</h1>
+    <ul>Гитары
+        <li>Электрогитары</li>
+        <li>Акустические гитары</li>
+        <li>Бас-гитары</li>
+    </ul>
+    <ul>Барабаны
+        <li>Электробарабаны</li>
+        <li>Классические барабаны</li>
+        <li>Установки</li>
+    </ul>
+    <ul>Клавишные
+        <li>Синтезаторы</li>
+        <li>Фортопиано</li>
+        <li>Клавесины</li>
+    </ul>
+{% endblock content %}
